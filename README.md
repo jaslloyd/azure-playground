@@ -1,18 +1,5 @@
 # Azure Blob Storage Playground
 
-
-## Hosting a website on Azure Blob Storage
-High level steps:
-1. Create a resource group
-2. Create a storage account resource in that group
-3. Enable static website hosting under Under settings/Static Web.
-4. Give it an index document name (e.g index.html) and error document if you want
-5. Click save
-6. Visit primary endpoint you are provided
-7. Use below steps in Blob Storage section to upload static files to blog storage container.
-
-Follow along with Quick start guide [here](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-cli)
-
 ## Azure Commands
 
 View account Data: `az account list`
@@ -82,3 +69,14 @@ Uploading to a blob via: `az storage blob upload --container-name sample-contain
 
 Uploading a bunch of files via: `az storage blob upload-batch -d sample-container -s <path-to-directory>`
 
+## Hosting a website on Azure Blob Storage
+High level steps:
+1. Create a resource group
+2. Create a storage account resource in that group
+3. Enable static website hosting under Under settings/Static Web.
+4. Give it an index document name (e.g index.html) and error document if you want
+5. Click save
+6. Visit primary endpoint you are provided
+7. Use below steps in Blob Storage section to upload static files to blog storage container.
+
+Follow along with Quick start guide [here](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-cli)
